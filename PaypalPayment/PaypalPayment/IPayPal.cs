@@ -8,6 +8,7 @@ namespace PaypalPayment
     interface IPayPal
     {
         Task<PayPalPaymentExecutedResponse> ExecutedPayment(string paymentId, string payerId);
-        Task<string> getRedirectURLToPayPal(double total, string currency);
+
+        Task<string> CreatePay(double total, string currency);
     }
 }

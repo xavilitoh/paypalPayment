@@ -21,7 +21,6 @@ namespace PaypalPayment
         public PayPalAPI(IConfiguration configuration)
         {
             Configuration = configuration;
-            this.paypalModel = paypalModel;
         }
 
         public async Task<PayPalPaymentExecutedResponse> ExecutedPayment(string paymentId, string payerId)
@@ -29,7 +28,9 @@ namespace PaypalPayment
             try
             {
                 HttpClient http = GetPaypalHttpClient();
+
                 PayPalAccessToken accessToken = await GetPayPalAccessTokenAsync(http);
+
                 return await ExecutePaypalPaymentAsync(http, accessToken, paymentId, payerId);
             }
             catch (Exception ex)
@@ -40,7 +41,7 @@ namespace PaypalPayment
         }
 
 
-        public async Task<string> getRedirectURLToPayPal(double total, string currency)
+        public async Task<string> CreatePay(double total, string currency)
         {
             try
             {
