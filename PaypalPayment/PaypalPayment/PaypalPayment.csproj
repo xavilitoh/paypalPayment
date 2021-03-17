@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Autors>Xavier Berroa</Autors>
+    <Company>WXBO soft</Company>
+    <Vesion>1.0.2</Vesion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/xavilitoh/paypalpayment</RepositoryUrl>
+    <Descripcion>Pagos con paypal en .Net core</Descripcion>
   </PropertyGroup>
 
   <ItemGroup>
