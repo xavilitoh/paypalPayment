@@ -20,7 +20,7 @@ jobs:
     - name: Publish NuGet
       uses: Bchir/update-nuget@V1.0.1-RC3
       with: 
-        PROJECT_FILE_PATH: paypalpayment/PaypalPayment/PaypalPayment/PaypalPayment.csproj
+        versionToSelect: paypalpayment/PaypalPayment/PaypalPayment/PaypalPayment.csproj
         TAG_FORMAT: '*'
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
