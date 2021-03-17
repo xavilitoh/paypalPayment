@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.5
+      uses: Bchir/update-nuget@V1.0.1-RC3
       with: 
         PROJECT_FILE_PATH: paypalpayment/PaypalPayment/PaypalPayment/PaypalPayment.csproj
         TAG_FORMAT: '*'
