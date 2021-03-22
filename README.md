@@ -25,7 +25,7 @@ Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
  
  ## Configuracion del archivo Startup.cs
  
- `using PayPalPayment;
+ ` using PayPalPayment;
  public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -37,7 +37,7 @@ Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
         services.AddTransient<IPayPal, PayPalAPI>();
     }
 
- }`
+ } `
     
 
 
