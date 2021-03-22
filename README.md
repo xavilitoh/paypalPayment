@@ -7,7 +7,7 @@ Este paquete nos permite realizar pagos con la API de Paypal de una manera senci
 
 ___
 
-##Configuracion del archivo appsettings.json
+## Configuracion del archivo appsettings.json
 
 `"Paypal": {
     "clientID": "YOUR PAYPAL CLIENT ID",
