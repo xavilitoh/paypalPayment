@@ -9,7 +9,7 @@ ___
 
 ## Configuracion del archivo appsettings.json
 
-Coloca el siguiente objeto con tu informacion en el archivo appsettings.json
+Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
 
 `"Paypal": {
     "clientID": "YOUR PAYPAL CLIENT ID",
@@ -19,5 +19,26 @@ Coloca el siguiente objeto con tu informacion en el archivo appsettings.json
     "cancelUrl": "YOUR CANCEL URL",
     "apiURL": "PAYPAL API URL"
   },`
+  
+  
+ ---
+ 
+ ## Configuracion del archivo Startup.cs
+ 
+ `
+ using PayPalPayment;
+ public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddTransient<IPayPal, PayPalAPI>();
+        }
+        
+     }
+    `
 
 
