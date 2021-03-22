@@ -16,7 +16,7 @@ Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
 ```json
 "Paypal": {
     "clientID": "YOUR PAYPAL CLIENT ID",
-    "secret": "YOUR PAYPAL SECRET CODE
+    "secret": "YOUR PAYPAL SECRET CODE,
     "returnUrl": "YOUR SUCCESS URL",
     "cancelUrl": "YOUR CANCEL URL",
     "apiURL": "PAYPAL API URL"
@@ -53,7 +53,6 @@ Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
 "Paypal": {
     "clientID": "YOUR PAYPAL CLIENT ID",
     "secret": "YOUR PAYPAL SECRET CODE",
-    "urlAPI": "https://api.paypal.com",
     "returnUrl": "YOUR SUCCESS URL", // test/Success
     "cancelUrl": "YOUR CANCEL URL",// test/SuccessCancel
     "apiURL": "PAYPAL API URL"
