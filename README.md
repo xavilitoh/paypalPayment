@@ -27,17 +27,17 @@ Coloca el siguiente objeto con tu informacion en el archivo `appsettings.json`
  
  `using PayPalPayment;
  public class Startup
+{
+    public Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddTransient<IPayPal, PayPalAPI>();
-        }
-        
-     }
-    `
+        Configuration = configuration;
+    }
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddTransient<IPayPal, PayPalAPI>();
+    }
+
+ }`
+    
 
 
