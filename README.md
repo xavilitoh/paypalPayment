@@ -9,6 +9,8 @@ ___
 
 ## Configuracion del archivo appsettings.json
 
+Coloca el siguiente objeto con tu informacion en el archivo appsettings.json
+
 `"Paypal": {
     "clientID": "YOUR PAYPAL CLIENT ID",
     "secret": "YOUR PAYPAL SECRET CODE",
