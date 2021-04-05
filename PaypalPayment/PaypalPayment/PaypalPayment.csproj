@@ -6,13 +6,14 @@
     <Company>WXBO soft</Company>
     <Vesion>1.0.2</Vesion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/xavilitoh/paypalpayment/releases/tag/v1.0.3</RepositoryUrl>
+    <RepositoryUrl>https://github.com/xavilitoh/paypalpayment/releases/tag/v1.0.4</RepositoryUrl>
     <Descripcion>Pagos con paypal en .Net core</Descripcion>
-    <Description>Pagos con paypa en asp .net core 3.1</Description>
+    <Description>Pagos con paypal en asp .net core 3.1</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Xavier Berroa</Authors>
+    <Copyright>Xavier Berroa</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
